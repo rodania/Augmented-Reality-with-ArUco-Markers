@@ -33,10 +33,11 @@ The camera is activated, and when 4 ArUco markers are detected, a get frame func
 
 <b>get_frame()</b> function is responsible for finding the outer frame of the detected markers, in which the video will be streamed. The function arrange markers according to their location and detect the points below, returning them in a list.
 
+<img src="./images/frame.jpg">
+
+
 The video is then warpped to the observed frame, and streamed.
 
 ### Results
 <img src="./images/img1.gif">
 <img src="./images/img2.gif">
-
-
