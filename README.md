@@ -29,12 +29,14 @@ The idea of this project is to use ArUco markers on objects to stream a video.
 Python 3, Numpy, OpenCV
 
 ### Methodology
+
+<img src="./images/diagram.jpg">
+
 The camera is activated, and when 4 ArUco markers are detected, a get frame function is called.
 
 <b>get_frame()</b> function is responsible for finding the outer frame of the detected markers, in which the video will be streamed. The function arrange markers according to their location and detect the points below, returning them in a list.
 
 <img src="./images/frame.jpg">
-
 
 The video is then warpped to the observed frame, and streamed.
 
